@@ -9,5 +9,6 @@
 
     <body>
         <?php wp_footer(); ?>
+        <p>dfgdfgdfg</p>
     </body>
 </html>
