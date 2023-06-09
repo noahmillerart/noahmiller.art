@@ -1,3 +1,11 @@
 /*
 Theme Name: Noah Miller
 */
+
+body{
+    background-color: aliceblue;
+}
+
+mark {
+    background-color: lightcyan;
+  }

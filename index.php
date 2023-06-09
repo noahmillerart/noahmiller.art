@@ -1,27 +1,30 @@
 <?php get_header(); ?>
 
-<div class="container-sm">
+<div class="container-sm text-center" style="background-color: aquamarine;">
 
-    <!-- Post Loop -->
-    <?php
+    <!-- Last Comic --><?php
     $args = array(
-        'posts_per_page' => 7
+        'post_type' => 'post',
+        'posts_per_page' => 1,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'category_name' => 'comics'
     );
+
     $query = new WP_Query($args);
+
     if ($query->have_posts()) {
-        while ($query->have_posts()) {
-            $query->the_post(); ?>
-            
-            <div class="container-fluid" id="post">
-                <h1 class="display-6"><?php the_title(); ?></h1>
-                <?php the_content(); ?>
-            </div>
-    <?php
-        }
+        $query->the_post();
+        ?>
+        <div><?php the_content(); ?></div>
+        <?php
+    } else {
+
+        echo 'No posts found.';
     }
+
     wp_reset_postdata();
-    ?>
-    <!-- End Post Loop -->
+    ?><!-- End Last Comic -->
 
 </div>
     
