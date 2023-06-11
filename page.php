@@ -1,11 +1,17 @@
 <?php get_header(); ?>
 
-<div class="container-sm">
+<div class="container-md" id="page">
 
-    <?php the_title(); ?>
+    <div class="row">
+        <div class="col-md-8">
+            <?php the_title(); ?>
+            <?php the_content(); ?>
+        </div>
 
-<?php the_content(); ?>
-
+        <div class="col-md-4">
+            <?php get_sidebar(); ?>
+        </div>
+    </div>
 
 </div>
 

@@ -8,6 +8,9 @@ body{
 mark {
     background-color: lightcyan;
 }
+hr{
+    color: darkgrey;
+}
 
 /* Footer */
 
@@ -43,7 +46,6 @@ mark {
 
 /* Sidebar */
 
-
 #comics p{
     color: dimgrey;
 }
@@ -60,6 +62,27 @@ mark {
 #thoughts h2{
     color: midnightblue;
     font-size: medium;
+}
+#thoughts a{
+    text-decoration: none;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+#thoughts a:hover{
+    color: midnightblue;
+}
+#bio {
+    background-color: rgb(230, 233, 243);
+    color: black;
+    border-radius: 5px;
+}
+#bio a{
+    text-decoration: none;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+#bio a:hover{
+    color: midnightblue;
 }
 
 /* Content */
