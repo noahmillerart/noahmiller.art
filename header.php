@@ -28,7 +28,7 @@
                     <a class="nav-link" href="<?php $siteURL = home_url(); echo $siteURL; ?>/illustrations">Illustrations</a>
                   </li>
                   <li class="nav-item d-inline">
-                    <a class="nav-link" href="<?php $siteURL = home_url(); echo $siteURL; ?>/about">About</a>
+                    <a class="nav-link" href="<?php $siteURL = home_url(); echo $siteURL; ?>/illustrations">Thoughts</a>
                   </li>
                 </ul>
               </div>

@@ -5,7 +5,61 @@ Theme Name: Noah Miller
 body{
     background-color: aliceblue;
 }
-
 mark {
     background-color: lightcyan;
-  }
+}
+
+/* Footer */
+
+#logobottom img{
+    width: 80px;
+    height: 36px;
+    opacity: 0.7;
+}
+#logobottom img:hover{
+    opacity: 1;
+}
+#footer ul{
+    list-style-type: none;
+}
+#footer li{
+    display: inline-block;
+}
+#footer a{
+    text-decoration: none;
+    color: grey;
+}
+#footer a:hover{
+    color: black;
+}
+#socialmedia img{
+    opacity: 0.3;
+    width: 25px;
+    height: 25px;
+}
+#socialmedia img:hover{
+    opacity: 0.6;
+}
+
+/* Sidebar */
+
+
+#comics p{
+    color: dimgrey;
+}
+.attachment-thumbnail{
+    border-radius: 5%;
+    margin: 2%;
+    width: 100px;
+    height: 80px;
+}
+#thoughts p{
+    color: dimgrey;
+    font-size: small;
+}
+#thoughts h2{
+    color: midnightblue;
+    font-size: medium;
+}
+
+/* Content */
