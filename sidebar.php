@@ -1,6 +1,6 @@
-<div class="container-fluid py-4" id="thoughts">
+<div class="container-fluid pb-4" id="thoughts">
 
-    <div class="p-2 text-center">
+    <div class="p-4 text-center">
         <?php get_search_form(); ?>
     </div>
 
@@ -34,6 +34,8 @@
     ?>
     
 </div>
+
+<hr>
 
 <div class="container-fluid py-4" id="comics">
 
