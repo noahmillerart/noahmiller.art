@@ -76,3 +76,18 @@ function my_theme_widget_area() {
     ));
 }
 add_action('widgets_init', 'my_theme_widget_area');
+
+function custom_search_form($form) {
+    // Modify the search form HTML markup
+    // Replace or add HTML elements as needed
+    $form = '<form role="search" method="get" class="search-form" action="' . esc_url(home_url('/')) . '">
+                <label>
+                    <span class="screen-reader-text">' . __('', 'textdomain') . '</span>
+                    <input type="search" class="search-field" placeholder="' . __('Search...', 'textdomain') . '" value="' . get_search_query() . '" name="s" />
+                </label>
+                <button type="submit" class="search-submit">' . __('Search', 'textdomain') . '</button>
+            </form>';
+
+    return $form;
+}
+add_filter('get_search_form', 'custom_search_form');

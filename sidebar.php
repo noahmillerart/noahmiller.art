@@ -1,3 +1,40 @@
+<div class="container-fluid py-4" id="thoughts">
+
+    <div class="p-2 text-center">
+        <?php get_search_form(); ?>
+    </div>
+
+    <h1 class="display-6 py-4">Last Thoughts</h1>
+
+    <?php
+        $category_id = 6;
+
+        $args = array(
+        'category' => $category_id,
+        'posts_per_page' => -4,
+        );
+
+        $posts = get_posts($args);
+
+        if ($posts) {
+        foreach ($posts as $post) {
+        setup_postdata($post);
+
+        ?>
+        <div>
+
+            <h2><?php the_title(); ?></h2>
+            <p><?php the_excerpt(); ?></p>
+
+        </div>
+        <?php
+        }
+        wp_reset_postdata();
+        }
+    ?>
+    
+</div>
+
 <div class="container-fluid py-4" id="comics">
 
     <h1 class="display-6">Newest Comics</h1>
@@ -31,40 +68,6 @@
         }
     ?> 
 
-</div>
-
-<div class="container-fluid py-4" id="thoughts">
-
-    <h1 class="display-6">Last Thoughts</h1>
-
-    <?php
-        $category_id = 6;
-
-        $args = array(
-        'category' => $category_id,
-        'posts_per_page' => -4,
-        );
-
-        $posts = get_posts($args);
-
-        if ($posts) {
-        foreach ($posts as $post) {
-        setup_postdata($post);
-
-        ?>
-        <div class="py-2">
-
-            <h2><?php the_title(); ?></h2>
-            <p><?php the_excerpt(); ?></p>
-            <hr>
-
-        </div>
-        <?php
-        }
-        wp_reset_postdata();
-        }
-    ?>
-    
 </div>
 
 <div class="container-fluid py-4" id="illustrations">
