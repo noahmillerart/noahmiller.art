@@ -11,9 +11,25 @@ mark {
 hr{
     color: darkgrey;
 }
+.attachment-thumbnail{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 
+/* Header */
+
+#header a{
+    color: grey;
+}
+#header a:hover{
+    color: midnightblue;
+}
 /* Footer */
 
+#footer {
+    background-color:  rgb(230, 230, 230);
+}
 #logobottom img{
     width: 80px;
     height: 36px;
@@ -49,11 +65,19 @@ hr{
 #comics p{
     color: dimgrey;
 }
-.attachment-thumbnail{
-    border-radius: 5%;
+#comics h1{
+    font-size: 20pt;
+}
+#comics img{
     margin: 2%;
     width: 100px;
-    height: 80px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#search {
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
 }
 #thoughts p{
     color: dimgrey;
@@ -71,6 +95,10 @@ hr{
 #thoughts a:hover{
     color: midnightblue;
 }
+#thoughts h1{
+    font-size: 20pt;
+}
+
 #bio {
     color: midnightblue;
     border-radius: 5px;
@@ -84,4 +112,74 @@ hr{
     color: midnightblue;
 }
 
+#illustrations h1{
+    font-size: 20pt;
+}
+#illustrations img{
+    margin: 2%;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#archives a{
+    text-decoration: none;
+    color: grey;
+}
+#archives a:hover{
+    color: black;
+}
+#archives h1{
+    font-size: 20pt;
+}
+#archives ul{
+    list-style-type: none;
+}
+#archives li{
+    display: inline-block;
+    padding: 2%;
+}
+#archives li:hover{
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+
 /* Content */
+
+#pagination {
+    color: black;
+}
+#pagination a{
+    text-decoration: none;
+    color: grey;
+}
+#pagination a:hover{
+    color: midnightblue;
+}
+
+#archived a{
+    text-decoration: none;
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: small;
+}
+#archived a:hover{
+    color: midnightblue;
+}
+#thumbnail {
+    width: 100px;
+}
+
+#thumb ul{
+    list-style-type: none;
+}
+#thumb li{
+    display: inline-block;
+}
+
+#result h1{
+    font-size: 20pt;
+}
+#result {
+    font-size: small;
+}

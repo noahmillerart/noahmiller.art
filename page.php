@@ -4,7 +4,6 @@
 
     <div class="row">
         <div class="col-md-8">
-            <?php the_title(); ?>
             <?php the_content(); ?>
         </div>
 

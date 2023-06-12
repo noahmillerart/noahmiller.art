@@ -10,7 +10,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-sm p-5">  <!--Header-->
+    <div class="container-sm p-5" id="header">  <!--Header-->
 
       <div class="container-fluid text-center" >
 

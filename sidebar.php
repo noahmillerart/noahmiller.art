@@ -1,10 +1,10 @@
 <div class="container-fluid pb-4" id="thoughts">
 
-    <div class="p-4 text-center">
+    <div class="p-4 text-center" id="search">
         <?php get_search_form(); ?>
     </div>
 
-    <h1 class="display-6 py-4">Last Thoughts</h1>
+    <h1 class="display-6 py-4">Lastest Thoughts</h1>
 
     <?php
         $category_id = 6;
@@ -24,6 +24,7 @@
         <div>
 
             <h2><?php the_title(); ?></h2>
+            <small><?php echo get_the_date('F j, Y'); ?></small>
             <p><?php the_excerpt(); ?></p>
 
         </div>
@@ -106,3 +107,21 @@
     ?> 
 
 </div>
+
+<div class="container-fluid py-4" id="archives">
+
+    <h1 class="display-6">Archives</h1>
+
+    <ul class="p-0">
+        <?php
+            $archives = wp_get_archives(array(
+            'type' => 'monthly',
+            'echo' => 0,
+            ));
+        
+            echo $archives;
+        ?>
+    </ul>
+
+</div>
+

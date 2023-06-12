@@ -82,12 +82,28 @@ function custom_search_form($form) {
     // Replace or add HTML elements as needed
     $form = '<form role="search" method="get" class="search-form" action="' . esc_url(home_url('/')) . '">
                 <label>
-                    <span class="screen-reader-text">' . __('', 'textdomain') . '</span>
-                    <input type="search" class="search-field" placeholder="' . __('Search...', 'textdomain') . '" value="' . get_search_query() . '" name="s" />
+                    <span class="screen-reader-text form-label">' . __('', 'textdomain') . '</span>
+                    <input type="search" class="search-field form-control" placeholder="' . __('Search...', 'textdomain') . '" value="' . get_search_query() . '" name="s" />
                 </label>
-                <button type="submit" class="search-submit">' . __('Search', 'textdomain') . '</button>
+                <button type="submit" class="search-submit btn btn-primary">' . __('Search', 'textdomain') . '</button>
             </form>';
 
     return $form;
 }
 add_filter('get_search_form', 'custom_search_form');
+
+function custom_thumbnail_size() {
+    add_image_size( 'custom-thumbnail', 500, 300, true );
+}
+add_action( 'after_setup_theme', 'custom_thumbnail_size' );
+
+function custom_archive_query($query) {
+    if (is_admin() || ! $query->is_main_query()) {
+        return;
+    }
+
+    if ($query->is_archive() && $query->is_paged()) {
+        $query->set('posts_per_page', 5);
+    }
+}
+add_action('pre_get_posts', 'custom_archive_query');

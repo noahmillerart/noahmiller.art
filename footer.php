@@ -1,8 +1,6 @@
 
-  <div class="container-sm" id="footer"><!-- Footer -->
+  <div class="container-fluid" id="footer"><!-- Footer -->
 
-    
-    <hr>
     <div class="container text-center p-4">
 
       <div class="container p-2" id="logobottom">
