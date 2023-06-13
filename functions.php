@@ -85,7 +85,7 @@ function custom_search_form($form) {
                     <span class="screen-reader-text form-label">' . __('', 'textdomain') . '</span>
                     <input type="search" class="search-field form-control" placeholder="' . __('Search...', 'textdomain') . '" value="' . get_search_query() . '" name="s" />
                 </label>
-                <button type="submit" class="search-submit btn btn-primary">' . __('Search', 'textdomain') . '</button>
+                <button type="submit" class="btn btn-dark btn-sm">' . __('Search', 'textdomain') . '</button>
             </form>';
 
     return $form;

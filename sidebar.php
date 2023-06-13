@@ -1,8 +1,4 @@
-<div class="container-fluid pb-4" id="thoughts">
-
-    <div class="p-4 text-center" id="search">
-        <?php get_search_form(); ?>
-    </div>
+<div class="container-fluid pb-4 px-4" id="thoughts">
 
     <h1 class="display-6 py-4">Lastest Thoughts</h1>
 
@@ -21,24 +17,24 @@
         setup_postdata($post);
 
         ?>
-        <div>
 
-            <h2><?php the_title(); ?></h2>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
             <small><?php echo get_the_date('F j, Y'); ?></small>
-            <p><?php the_excerpt(); ?></p>
+            <div id="excerpt" class="pb-4">
+                <p><?php the_excerpt(); ?></p>
+            </div>
 
-        </div>
         <?php
         }
         wp_reset_postdata();
         }
     ?>
-    
+
+    <?php get_search_form(); ?>
+
 </div>
 
-<hr>
-
-<div class="container-fluid py-4" id="comics">
+<div class="container-fluid pt-4" id="comics">
 
     <h1 class="display-6">Newest Comics</h1>
 
@@ -73,7 +69,7 @@
 
 </div>
 
-<div class="container-fluid py-4" id="illustrations">
+<div class="container-fluid pt-2" id="illustrations">
 
     <h1 class="display-6">Recent Illustrations</h1>
 
@@ -108,7 +104,7 @@
 
 </div>
 
-<div class="container-fluid py-4" id="archives">
+<div class="container-fluid pt-4" id="archives">
 
     <h1 class="display-6">Archives</h1>
 
@@ -125,3 +121,11 @@
 
 </div>
 
+<div class="container-fluid pb-5">
+    <div class="container-fluid p-4" id="knowmore">
+        <p>
+            <small>Original creations signed by Noah Miller, for more professional projects please visit my complete Portfolio in my <a href="https://noahstudio.space" target="_blank">Studio Website</a>.</small>
+        </p>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo_NM.png" alt="Noah Miller" class="img-fluid logosigned">
+    </div>
+</div>

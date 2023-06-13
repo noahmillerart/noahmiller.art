@@ -1,7 +1,7 @@
 
   <div class="container-fluid" id="footer"><!-- Footer -->
 
-    <div class="container text-center p-4">
+    <div class="container text-center py-5">
 
       <div class="container p-2" id="logobottom">
         <a href="http://noahstudio.space" target="_blank">

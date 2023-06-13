@@ -45,6 +45,8 @@
 
                     </ul>
 
+                    <hr>
+
                     <h1 class="display-6">Illustrations of <?php echo get_the_date('F Y'); ?></h1>
 
                     <ul id="thumb" class="pb-4">
@@ -82,6 +84,7 @@
 
                     </ul>
 
+                    <hr>
 
                     <h1 class="display-6 pb-5">Thoughts of <?php echo get_the_date('F Y'); ?></h1>
 
@@ -124,12 +127,14 @@
                             <div class="pb-5" id="archived">
                                 <div class="row">
                                     <div class="col-2 text-center pb-4" id="thumbnail">
-                                        <?php the_post_thumbnail('thumbnail'); ?>
+                                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
                                     </div>
                                     <div class="col px-2">
-                                        <h6><?php the_title(); ?></h6>
+                                        <h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
                                         <p><?php echo get_the_date('F j, Y'); ?></p>
-                                        <?php the_excerpt(); ?>
+                                        <div id="excerpt_arch">
+                                            <?php the_excerpt(); ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +142,6 @@
                     <?php
                     }
                     ?>
-                    <hr>
                     <div class="container-fluid text-center" id="pagination">
                         <?php
                             echo paginate_links(array(

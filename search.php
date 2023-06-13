@@ -2,21 +2,29 @@
 
 <div class="container-md">
     <div class="row">
-        <div class="col-md-8">          
+        <div class="col-md-8 py-4">
+
+            <h1 class="display-6">Search Result</h1>          
 
             <?php
 
             if (have_posts()) {
                 while (have_posts()) {
                     the_post();
-                    // Display the title and content of each search result
                     ?>
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <?php the_excerpt(); ?>
+                    <div class="py-4 px-2" >
+                        <div class="pb-3" id="searchtitle">
+                            <h6><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>
+                            <small><?php echo get_the_date('F j, Y'); ?></small>
+                        </div>
+                        <div id="searchresult">
+                            <?php the_excerpt(); ?>
+                        </div>
+                    </div>
+                    <hr>
                     <?php
                 }
             } else {
-                // Display a message if no search results are found
                 echo '<p>No search results found.</p>';
             }
             
@@ -30,5 +38,3 @@
 </div>
 
 <?php get_footer(); ?>
-
-

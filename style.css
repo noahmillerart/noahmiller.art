@@ -1,9 +1,14 @@
 /*
-Theme Name: Noah Miller
+Theme Name: Noah Miller Blog
+Theme URI: http://noastudio.space
+Description: Official Noah Miller Blog
+Author: Noah Miller
+Author URI: http://noahmiller.art
+Version: 1.0
 */
 
 body{
-    background-color: aliceblue;
+    background-color: ghostwhite;
 }
 mark {
     background-color: lightcyan;
@@ -75,8 +80,8 @@ hr{
     border-radius: 5px;
 }
 
-#search {
-    background-color: rgb(221, 221, 221);
+#thoughts {
+    background-color: rgb(240, 240, 240);
     border-radius: 5px;
 }
 #thoughts p{
@@ -84,29 +89,37 @@ hr{
     font-size: small;
 }
 #thoughts h2{
-    color: midnightblue;
     font-size: medium;
 }
 #thoughts a{
     text-decoration: none;
+    color: black;
+}
+
+#thoughts h1{
+    font-size: 20pt;
+}
+#excerpt a{
+    text-decoration: none;
     font-weight: bold;
     color: cornflowerblue;
 }
-#thoughts a:hover{
+#excerpt a:hover{
     color: midnightblue;
-}
-#thoughts h1{
-    font-size: 20pt;
 }
 
 #bio {
     color: midnightblue;
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
     border-radius: 5px;
+    border-width: 1px;
 }
 #bio a{
     text-decoration: none;
     font-weight: bold;
     color: cornflowerblue;
+    font-size: small;
 }
 #bio a:hover{
     color: midnightblue;
@@ -144,6 +157,23 @@ hr{
     border-radius: 5px;
 }
 
+#knowmore {
+    border-style: solid;
+    border-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    border-width: 1px;
+    color: grey;
+}
+#knowmore a{
+    text-decoration: none;
+    color: black;
+}
+.logosigned {
+    width: 80px;
+    height: 23px;
+    opacity: 0.7;
+}
+
 /* Content */
 
 #pagination {
@@ -159,13 +189,17 @@ hr{
 
 #archived a{
     text-decoration: none;
+    color: black;
+}
+#excerpt_arch a{
+    text-decoration: none;
     font-weight: bold;
     color: cornflowerblue;
-    font-size: small;
 }
-#archived a:hover{
+#excerpt_arch a:hover{
     color: midnightblue;
 }
+
 #thumbnail {
     width: 100px;
 }
@@ -182,4 +216,18 @@ hr{
 }
 #result {
     font-size: small;
+}
+
+#searchresult a{
+    text-decoration: none;
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: small;
+}
+#searchresult a:hover{
+    color: midnightblue;
+}
+#searchtitle a{
+    text-decoration: none;
+    color: black;
 }
