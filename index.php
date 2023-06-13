@@ -4,8 +4,13 @@
 
     <div class="row">
 
-        <div class="col-md-8">
-            <p>fmsdlfml</p>
+        <div class="col-md-8 px-4">
+            
+
+
+
+
+
         </div>
 
         <div class="col-md-4">

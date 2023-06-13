@@ -114,6 +114,10 @@ hr{
     border-color: rgb(209, 209, 209);
     border-radius: 5px;
     border-width: 1px;
+    background-image: url(img/icon_bio.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 150px 150px;
 }
 #bio a{
     text-decoration: none;
@@ -230,4 +234,30 @@ hr{
 #searchtitle a{
     text-decoration: none;
     color: black;
+}
+
+#authorname {
+    text-align: right;
+}
+
+.share-links a{
+    text-decoration: none;
+    color: grey;
+}
+.share-links a:hover{
+    color: black;
+}
+
+.share-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.share-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.share-links li:last-child {
+    margin-right: 0;
 }

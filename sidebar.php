@@ -124,7 +124,7 @@
 <div class="container-fluid pb-5">
     <div class="container-fluid p-4" id="knowmore">
         <p>
-            <small>Original creations signed by Noah Miller, for more professional projects please visit my complete Portfolio in my <a href="https://noahstudio.space" target="_blank">Studio Website</a>.</small>
+            <small>Originals signed by Noah Miller, do not use without permission, for more professional projects please visit my complete Portfolio in my <a href="https://noahstudio.space" target="_blank">Studio Website</a>.</small>
         </p>
         <img src="<?php echo get_template_directory_uri(); ?>/img/logo_NM.png" alt="Noah Miller" class="img-fluid logosigned">
     </div>
