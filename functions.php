@@ -107,3 +107,23 @@ function custom_archive_query($query) {
     }
 }
 add_action('pre_get_posts', 'custom_archive_query');
+
+function add_img_fluid_class($content) {
+    $dom = new DOMDocument();
+    libxml_use_internal_errors(true); // Disable libxml errors and warnings
+    $dom->loadHTML($content);
+    libxml_clear_errors();
+
+    $images = $dom->getElementsByTagName('img');
+    foreach ($images as $image) {
+        $class = $image->getAttribute('class');
+        $class .= ' img-fluid';
+        $image->setAttribute('class', $class);
+    }
+
+    $newContent = $dom->saveHTML();
+    return $newContent;
+}
+
+
+

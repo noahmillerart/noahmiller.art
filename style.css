@@ -21,15 +21,23 @@ hr{
     height: 50px;
     border-radius: 50%;
 }
+.small-text {
+    font-size: 12px;
+  }
 
 /* Header */
 
-#header a{
+#header a:link{
     color: grey;
 }
 #header a:hover{
     color: midnightblue;
 }
+.active {
+    font-weight: bold;
+    color: midnightblue;
+}
+
 /* Footer */
 
 #footer {
@@ -182,12 +190,18 @@ hr{
 
 #pagination {
     color: black;
+    font-size: large;
 }
 #pagination a{
     text-decoration: none;
-    color: grey;
+    color: cornflowerblue;
 }
 #pagination a:hover{
+    color: midnightblue;
+    text-decoration: underline;
+}
+.current {
+    font-weight: bold;
     color: midnightblue;
 }
 
@@ -242,10 +256,10 @@ hr{
 
 .share-links a{
     text-decoration: none;
-    color: grey;
+    color: cornflowerblue;
 }
 .share-links a:hover{
-    color: black;
+    color: midnightblue;
 }
 
 .share-links ul {
@@ -260,4 +274,16 @@ hr{
 
 .share-links li:last-child {
     margin-right: 0;
+}
+
+/* Page */
+
+#comicspage a{
+    text-decoration: none;
+    color: black;
+}
+
+#homeposts a{
+    text-decoration: none;
+    color: black;
 }

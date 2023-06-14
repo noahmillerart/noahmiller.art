@@ -14,12 +14,15 @@
                         <article>
                             <h1 class="display-6"><?php the_title(); ?></h1>
                             <small><?php the_date(); ?></small>
+
                             <div class="container-fluid py-4">
-                                <?php the_content(); ?>
+
+                                <?php echo add_img_fluid_class(apply_filters('the_content', get_the_content())); ?>
                                 
                             </div>
+
                             <div class="container-fluid" id="authorname">
-                                <p><em><?php the_author(); ?></em></p>
+                                <p>By <em><?php the_author(); ?></em></p>
                                 <hr>
                             </div>
 

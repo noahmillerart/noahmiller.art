@@ -92,7 +92,7 @@
                     <?php
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-                    $posts_per_page = 10;
+                    $posts_per_page = 20;
 
                     $category_slug = 'thoughts';
 
