@@ -41,7 +41,7 @@ hr{
 /* Footer */
 
 #footer {
-    background-color:  rgb(230, 230, 230);
+    background-color: rgb(240, 240, 240);
 }
 #logobottom img{
     width: 80px;
@@ -86,6 +86,10 @@ hr{
     width: 100px;
     height: 100px;
     border-radius: 5px;
+    opacity: 0.7;
+}
+#comics img:hover{
+    opacity: 1;
 }
 
 #thoughts {
@@ -145,6 +149,10 @@ hr{
     width: 100px;
     height: 100px;
     border-radius: 5px;
+    opacity: 0.7;
+}
+#illustrations img:hover{
+    opacity: 1;
 }
 
 #archives a{
@@ -185,6 +193,26 @@ hr{
     height: 23px;
     opacity: 0.7;
 }
+.tag-cloud{
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+.tag-cloud a:link, .tag-cloud a:visited{
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+.tag-cloud a:hover{
+    color: midnightblue;
+}
+#tagresult {
+    border: 1px;
+    border-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    border-style: solid;
+}
+#tagresult:hover {
+    background-color: rgb(240, 240, 240);
+}
 
 /* Content */
 
@@ -198,7 +226,6 @@ hr{
 }
 #pagination a:hover{
     color: midnightblue;
-    text-decoration: underline;
 }
 .current {
     font-weight: bold;
@@ -276,6 +303,20 @@ hr{
     margin-right: 0;
 }
 
+.post-tags ul{
+    list-style: none;
+}
+.post-tags li{
+    display: inline-block;
+}
+.post-tags a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.post-tags a:hover{
+    color: midnightblue;
+}
+
 /* Page */
 
 #comicspage a{
@@ -283,7 +324,32 @@ hr{
     color: black;
 }
 
+.gallery ul{
+    list-style: none;
+}
+.gallery li{
+    display: inline-block;
+    padding: 2px;
+}
+.gallery img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.gallery img:hover{
+    opacity: 1;
+}
+
 #homeposts a{
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 767px) {
+    .gallery img {
+        width: 80px;
+        height: 80px;
+    }
 }

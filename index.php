@@ -44,9 +44,8 @@
 
                 <?php
                 }
-
-                // Display pagination links
-                echo '<div class="container-fluid text-center" id="pagination">';
+                echo '<hr>';
+                echo '<div class="text-center p-2" id="pagination">';
                 echo paginate_links(array(
                 'total' => $query->max_num_pages,
                 'prev_text' => '&laquo; Previous',

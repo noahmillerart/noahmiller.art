@@ -8,7 +8,7 @@
 
                 <main id="main" class="site-main" role="main">
 
-                    <h1 class="display-6">Comics of <?php echo get_the_date('F Y'); ?></h1>
+                    <h1 class="display-6">Comics of <?php echo get_the_date('F, Y'); ?></h1>
 
                     <ul id="thumb" class="pb-4">
 
@@ -47,7 +47,7 @@
 
                     <hr>
 
-                    <h1 class="display-6">Illustrations of <?php echo get_the_date('F Y'); ?></h1>
+                    <h1 class="display-6">Illustrations of <?php echo get_the_date('F, Y'); ?></h1>
 
                     <ul id="thumb" class="pb-4">
 
@@ -86,13 +86,13 @@
 
                     <hr>
 
-                    <h1 class="display-6 pb-5">Thoughts of <?php echo get_the_date('F Y'); ?></h1>
+                    <h1 class="display-6 pb-5">Thoughts of <?php echo get_the_date('F, Y'); ?></h1>
 
 
                     <?php
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-                    $posts_per_page = 20;
+                    $posts_per_page = 10;
 
                     $category_slug = 'thoughts';
 
@@ -142,16 +142,24 @@
                     <?php
                     }
                     ?>
-                    <div class="container-fluid text-center" id="pagination">
-                        <?php
-                            echo paginate_links(array(
-                            'total' => ceil($total_posts / $posts_per_page),
+                    <?php
+
+                    $total_pages = ceil($total_posts / $posts_per_page);
+
+                    if ($total_pages < 10) {
+
+                        echo '<hr>';
+                        echo '<div class="container-fluid text-center p-2" id="pagination">';
+                        echo paginate_links(array(
+                            'total' => $total_pages,
                             'current' => $paged,
                             'prev_text' => '&laquo; Previous',
                             'next_text' => 'Next &raquo;',
-                            ));
-                        ?>
-                    </div>
+                        ));
+                        echo '</div>';
+                        
+                    }
+                    ?>                    
                     <?php
                     } else {
                     ?>

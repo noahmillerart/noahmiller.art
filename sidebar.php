@@ -121,6 +121,15 @@
 
 </div>
 
+<div class="container-fluid pb-4" >
+    <div class="tag-cloud p-5 text-center small-text" id="tag-clouds">
+        <?php
+        // Display the tag cloud
+        wp_tag_cloud();
+        ?>
+    </div>
+</div>
+
 <div class="container-fluid pb-5">
     <div class="container-fluid p-4" id="knowmore">
         <p>

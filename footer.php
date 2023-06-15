@@ -16,9 +16,9 @@
           <li class="p-2"><a href="http://noahstudio.space" target="_blank">Studio</a></li>
         </ul>
         <ul class="p-0">
-          <li class="p-2"><a href="#">Comics</a></li>
-          <li class="p-2"><a href="#">Illustrations</a></li>
-          <li class="p-2"><a href="#">Thoughts</a></li>
+          <li class="p-2"><a href="<?php $siteURL = home_url(); echo $siteURL; ?>/comics">Comics</a></li>
+          <li class="p-2"><a href="<?php $siteURL = home_url(); echo $siteURL; ?>/illustrations">Illustrations</a></li>
+          <li class="p-2"><a href="<?php $siteURL = home_url(); echo $siteURL; ?>/thoughts">Thoughts</a></li>
         </ul>
       </nav>
 

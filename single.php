@@ -23,8 +23,27 @@
 
                             <div class="container-fluid" id="authorname">
                                 <p>By <em><?php the_author(); ?></em></p>
-                                <hr>
                             </div>
+
+                                <?php
+                                $tags = get_the_tags();
+                                if ($tags) {
+                                echo '<div class="post-tags">';
+                                
+                                echo '<ul class="p-0">';
+
+                                echo '<li class="p-2 small-text"><b>Tags:</b></li>';
+
+                                foreach ($tags as $tag) {
+                                echo '<li class="p-2 small-text"><a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a></li>';
+                                }
+
+                                echo '</ul>';
+                                echo '</div>';
+                                }
+                                ?>
+
+                                <hr>
 
                             <div class="share-links">
                                 <ul>
