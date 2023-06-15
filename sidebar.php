@@ -1,6 +1,6 @@
 <div class="container-fluid pb-4 px-4" id="thoughts">
 
-    <h1 class="display-6 py-4">Lastest Thoughts</h1>
+    <h1 class="display-6 py-4">Latest Thoughts</h1>
 
     <?php
         $category_id = 6;
@@ -133,7 +133,7 @@
 <div class="container-fluid pb-5">
     <div class="container-fluid p-4" id="knowmore">
         <p>
-            <small>Authentic originals signed by Noah Miller. Unlawful reproduction or use without permission is strictly prohibited. For a more extensive selection of my professional projects, please visit my comprehensive portfolio in my <a href="https://noahstudio.space" target="_blank">Studio Website</a>.</small>
+            <small>Original Art signed by Noah Miller. Unlawful reproduction or use without permission is strictly prohibited. For a more extensive selection of my professional projects, please visit my comprehensive portfolio in my <a href="https://noahstudio.space" target="_blank">Studio Website</a>.</small>
         </p>
         <img src="<?php echo get_template_directory_uri(); ?>/img/logo_NM.png" alt="Noah Miller" class="img-fluid logosigned">
     </div>

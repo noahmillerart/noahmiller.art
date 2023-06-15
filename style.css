@@ -75,6 +75,10 @@ hr{
 
 /* Sidebar */
 
+.search-field{
+    width: 150px;
+}
+
 #comics p{
     color: dimgrey;
 }
