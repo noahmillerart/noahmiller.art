@@ -4,7 +4,7 @@
 
     <div class="row">
 
-        <div class="col-md-8 px-4 pb-4">
+        <div class="col-md-7 px-4 pb-4">
             
 
             <?php
@@ -71,7 +71,7 @@
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-5">
             <?php get_template_part('bio'); ?>
             <?php get_sidebar(); ?>
         </div>

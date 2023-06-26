@@ -3,10 +3,10 @@
     <h1 class="display-6 py-4">Latest Thoughts</h1>
 
     <?php
-        $category_id = 6;
+        $category_slug = 'thoughts';
 
         $args = array(
-        'category' => $category_id,
+        'category_name' => $category_slug,
         'posts_per_page' => -4,
         );
 
@@ -15,18 +15,15 @@
         if ($posts) {
         foreach ($posts as $post) {
         setup_postdata($post);
-
         ?>
-
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <small><?php echo get_the_date('F j, Y'); ?></small>
-            <div id="excerpt" class="pb-4">
-                <p><?php the_excerpt(); ?></p>
-            </div>
-
+        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <small><?php echo get_the_date('F j, Y'); ?></small>
+        <div id="excerpt" class="pb-4">
+        <p><?php the_excerpt(); ?></p>
+        </div>
         <?php
         }
-        wp_reset_postdata();
+            wp_reset_postdata();
         }
     ?>
 
@@ -34,16 +31,16 @@
 
 </div>
 
-<div class="container-fluid pt-4" id="comics">
+<div class="container-fluid pt-4 text-center" id="comics">
 
     <h1 class="display-6">Newest Comics</h1>
 
     <?php
-        $category_id = 5;
+        $category_slug = 'comics';
         $posts_per_page = 6;
 
         $args = array(
-        'category' => $category_id,
+        'category_name' => $category_slug,
         'posts_per_page' => $posts_per_page,
         'orderby' => 'date',
         'order' => 'DESC',
@@ -69,16 +66,16 @@
 
 </div>
 
-<div class="container-fluid pt-2" id="illustrations">
+<div class="container-fluid pt-2 text-center" id="illustrations">
 
     <h1 class="display-6">Recent Illustrations</h1>
 
     <?php
-        $category_id = 7;
+        $category_slug = 'illustrations';
         $posts_per_page = 6;
 
         $args = array(
-        'category' => $category_id,
+        'category_name' => $category_slug,
         'posts_per_page' => $posts_per_page,
         'orderby' => 'date',
         'order' => 'DESC',

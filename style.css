@@ -89,7 +89,7 @@ hr{
     margin: 2%;
     width: 100px;
     height: 100px;
-    border-radius: 5px;
+    border-radius: 50%;
     opacity: 0.7;
 }
 #comics img:hover{
@@ -128,12 +128,8 @@ hr{
     color: midnightblue;
     border-style: solid;
     border-color: rgb(209, 209, 209);
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     border-width: 1px;
-    background-image: url(img/icon_bio.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 150px 150px;
 }
 #bio a{
     text-decoration: none;
@@ -144,6 +140,13 @@ hr{
 #bio a:hover{
     color: midnightblue;
 }
+#biopicture{
+    height: 100px;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    background-image: url('img/banner_bio_blog.png');
+    background-repeat: no-repeat;
+}
 
 #illustrations h1{
     font-size: 20pt;
@@ -152,7 +155,7 @@ hr{
     margin: 2%;
     width: 100px;
     height: 100px;
-    border-radius: 5px;
+    border-radius: 50%;
     opacity: 0.7;
 }
 #illustrations img:hover{

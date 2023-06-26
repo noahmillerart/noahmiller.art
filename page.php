@@ -3,7 +3,7 @@
 <div class="container-md" id="page">
 
     <div class="row">
-        <div class="col-md-8 pt-4 px-5">
+        <div class="col-md-7 pt-4">
 
             <?php
                 global $post;
@@ -258,7 +258,7 @@
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-5">
             <?php get_sidebar(); ?>
         </div>
     </div>
