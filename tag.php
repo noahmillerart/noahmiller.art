@@ -2,7 +2,7 @@
 
 <div class="container-md">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
 
         <?php
 /*
@@ -69,7 +69,7 @@ if ($query->have_posts()) {
 
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
 
             <?php get_sidebar(); ?>
 

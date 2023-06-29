@@ -2,7 +2,7 @@
 
 <div class="container-md">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
 
             <div id="result" class="container-md pb-5">
 
@@ -174,7 +174,7 @@
             </div>
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
 
             <?php get_sidebar(); ?>
 

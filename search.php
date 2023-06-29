@@ -2,7 +2,7 @@
 
 <div class="container-md">
     <div class="row">
-        <div class="col-md-8 py-4">
+        <div class="col-md-7 py-4">
 
             <h1 class="display-6">Search Result</h1>          
 
@@ -31,7 +31,7 @@
             ?>
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
             <?php get_sidebar(); ?>
         </div>
     </div>

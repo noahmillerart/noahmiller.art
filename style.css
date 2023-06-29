@@ -87,10 +87,11 @@ hr{
 }
 #comics img{
     margin: 2%;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     opacity: 0.7;
+    border: solid 1px #575757;
 }
 #comics img:hover{
     opacity: 1;
@@ -153,10 +154,11 @@ hr{
 }
 #illustrations img{
     margin: 2%;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     opacity: 0.7;
+    border: solid 1px #575757;
 }
 #illustrations img:hover{
     opacity: 1;

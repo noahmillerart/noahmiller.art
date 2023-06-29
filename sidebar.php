@@ -37,7 +37,7 @@
 
     <?php
         $category_slug = 'comics';
-        $posts_per_page = 6;
+        $posts_per_page = 20;
 
         $args = array(
         'category_name' => $category_slug,
@@ -72,7 +72,7 @@
 
     <?php
         $category_slug = 'illustrations';
-        $posts_per_page = 6;
+        $posts_per_page = 20;
 
         $args = array(
         'category_name' => $category_slug,
