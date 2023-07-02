@@ -19,8 +19,6 @@
                 $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 10,
-                'monthnum' => $current_month,
-                'year' => $current_year,
                 'paged' => $paged,
                 );
 
@@ -39,7 +37,9 @@
                     </div>
                     
                     <div class="pb-5">
+
                         <?php echo add_img_fluid_class(get_the_content()); ?>
+
                     </div>
 
                 <?php
