@@ -14,11 +14,17 @@
 
                         <?php
                             $category_slug = 'comics';
+                            $selected_month = get_query_var('monthnum');
 
                             $args = array(
-                            'post_type' => 'post',
-                            'posts_per_page' => -1,
-                            'category_name' => $category_slug,
+                                'post_type' => 'post',
+                                'posts_per_page' => -1,
+                                'category_name' => $category_slug,
+                                'date_query' => array(
+                                    array(
+                                        'monthnum' => $selected_month,
+                                    ),
+                                ),
                             );
 
                             $posts_query = new WP_Query($args);
@@ -53,11 +59,17 @@
 
                         <?php
                             $category_slug = 'illustrations';
+                            $selected_month = get_query_var('monthnum');
 
                             $args = array(
                             'post_type' => 'post',
                             'posts_per_page' => -1,
                             'category_name' => $category_slug,
+                            'date_query' => array(
+                                array(
+                                    'monthnum' => $selected_month,
+                                ),
+                            ),
                             );
 
                             $posts_query = new WP_Query($args);
@@ -95,11 +107,17 @@
                     $posts_per_page = 10;
 
                     $category_slug = 'thoughts';
+                    $selected_month = get_query_var('monthnum');
 
                     $args = array(
                     'post_type' => 'post',
                     'posts_per_page' => -1,
                     'category_name' => $category_slug,
+                    'date_query' => array(
+                        array(
+                            'monthnum' => $selected_month,
+                        ),
+                    ),
                     );
 
                     $all_posts_query = new WP_Query($args);
@@ -112,6 +130,11 @@
                     'posts_per_page' => $posts_per_page,
                     'offset' => $offset,
                     'category_name' => $category_slug,
+                    'date_query' => array(
+                        array(
+                            'monthnum' => $selected_month,
+                        ),
+                    ),
                     );
 
                     $archive_query = new WP_Query($args);
