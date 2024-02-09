@@ -31,8 +31,8 @@
             <div class="container text-center">
               <div class="navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-center">
-                  <li class="nav-item d-inline <?php if (is_page('books')) echo 'active'; ?>">
-                    <a class="nav-link" aria-current="page" href="<?php $siteURL = home_url(); echo $siteURL; ?>/books">Books</a>
+                  <li class="nav-item d-inline <?php if (is_page('about')) echo 'active'; ?>">
+                    <a class="nav-link" aria-current="page" href="<?php $siteURL = home_url(); echo $siteURL; ?>/about">About</a>
                   </li>
                   <li class="nav-item d-inline <?php if (is_page('illustrations')) echo 'active'; ?>">
                     <a class="nav-link" href="<?php $siteURL = home_url(); echo $siteURL; ?>/illustrations">Illustrations</a>

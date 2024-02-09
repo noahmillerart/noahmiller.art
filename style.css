@@ -4,14 +4,14 @@ Theme URI: http://noastudio.space
 Description: Official Noah Miller Blog
 Author: Noah Miller
 Author URI: http://noahmiller.art
-Version: 1.0
+Version: 1.5
 */
 
 body{
     background-color: white;
 }
 mark {
-    background-color: lightcyan;
+    background-color: #E8E8E8;
 }
 hr{
     color: darkgrey;
@@ -331,6 +331,10 @@ hr{
 #comicspage a{
     text-decoration: none;
     color: black;
+}
+
+#about{
+	
 }
 
 .gallery ul{

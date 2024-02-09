@@ -124,6 +124,3 @@ function add_img_fluid_class($content) {
     $newContent = $dom->saveHTML();
     return $newContent;
 }
-
-
-

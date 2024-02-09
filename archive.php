@@ -8,51 +8,6 @@
 
                 <main id="main" class="site-main" role="main">
 
-                    <h1 class="display-6">Comics of <?php echo get_the_date('F, Y'); ?></h1>
-
-                    <ul id="thumb" class="pb-4">
-
-                        <?php
-                            $category_slug = 'comics';
-                            $selected_month = get_query_var('monthnum');
-
-                            $args = array(
-                                'post_type' => 'post',
-                                'posts_per_page' => -1,
-                                'category_name' => $category_slug,
-                                'date_query' => array(
-                                    array(
-                                        'monthnum' => $selected_month,
-                                    ),
-                                ),
-                            );
-
-                            $posts_query = new WP_Query($args);
-
-                            if ($posts_query->have_posts()) {
-                            while ($posts_query->have_posts()) {
-                            $posts_query->the_post();
-                            $post_url = get_permalink($post->ID);
-                            ?>
-
-                        <li class="p-2">
-                            <?php echo '<a href="' . $post_url . '">'; the_post_thumbnail('thumbnail'); echo '</a>'; ?>
-                        </li>
-
-                            <?php
-                            }
-                            wp_reset_postdata();
-                            } else {
-                            ?>
-                            <p>No posts found.</p>
-                            <?php
-                            }
-                        ?>
-
-                    </ul>
-
-                    <hr>
-
                     <h1 class="display-6">Illustrations of <?php echo get_the_date('F, Y'); ?></h1>
 
                     <ul id="thumb" class="pb-4">
